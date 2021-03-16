@@ -1,0 +1,1412 @@
+[
+    {
+        "IndustryCode": "2770027877",
+        "Industry": "水泥",
+        "CategoryCode": "2770027877534810710321271213122148827877",
+        "Category": "水泥50kg北區台泥",
+        "RecordDate": "2021/01/23",
+        "Price": "156.50",
+        "Currency": "台幣 元",
+        "Unit": "包"
+    },
+    {
+        "IndustryCode": "2770027877",
+        "Industry": "水泥",
+        "CategoryCode": "389282529228151209572230351484848309172148821271",
+        "Category": "預拌混凝土3000磅台北",
+        "RecordDate": "2021/01/23",
+        "Price": "2025.00",
+        "Currency": "台幣 元",
+        "Unit": "M3"
+    },
+    {
+        "IndustryCode": "2347830044652922347831165",
+        "Industry": "家畜，家禽",
+        "CategoryCode": "276113594832236312648132291",
+        "Category": "毛豬 屏東縣",
+        "RecordDate": "2021/01/23",
+        "Price": "7930.00",
+        "Currency": "台幣 元",
+        "Unit": "百公斤"
+    },
+    {
+        "IndustryCode": "2347830044652922347831165",
+        "Industry": "家畜，家禽",
+        "CategoryCode": "27611359482072926684",
+        "Category": "毛豬價格",
+        "RecordDate": "2021/01/23",
+        "Price": "7641.00",
+        "Currency": "台幣 元",
+        "Unit": "百公斤"
+    },
+    {
+        "IndustryCode": "2347830044652922347831165",
+        "Industry": "家畜，家禽",
+        "CategoryCode": "3290538622220252133521312503220844260202019719978",
+        "Category": "肉雞嘉南區2 公斤以上",
+        "RecordDate": "2021/01/23",
+        "Price": "27.00",
+        "Currency": "台幣 元",
+        "Unit": "600G"
+    },
+    {
+        "IndustryCode": "22823234472928936039",
+        "Industry": "大宗物資",
+        "CategoryCode": "67826621830216972072932266842535125976",
+        "Category": "CRB商品價 格指數",
+        "RecordDate": "2021/01/23",
+        "Price": "172.85",
+        "Currency": "null",
+        "Unit": "指數"
+    },
+    {
+        "IndustryCode": "22823234472928936039",
+        "Industry": "大宗物資",
+        "CategoryCode": "235674061333437211522173336817263992639936008",
+        "Category": "小麥芝加哥近期期貨",
+        "RecordDate": "2021/01/23",
+        "Price": "634.40",
+        "Currency": "美元 分",
+        "Unit": "英斗"
+    },
+    {
+        "IndustryCode": "22823234472928936039",
+        "Industry": "大宗物資",
+        "CategoryCode": "295773185933437211522173336817263992639936008",
+        "Category": "玉米芝加哥近期期貨",
+        "RecordDate": "2021/01/23",
+        "Price": "500.40",
+        "Currency": "美元 分",
+        "Unit": "英斗"
+    },
+    {
+        "IndustryCode": "22823234472928936039",
+        "Industry": "大宗物資",
+        "CategoryCode": "2780125289278333043620729",
+        "Category": "沙拉油盤價",
+        "RecordDate": "2021/01/23",
+        "Price": "665.00",
+        "Currency": "台幣 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "22823234472928936039",
+        "Industry": "大宗物資",
+        "CategoryCode": "406433591033437211522173336817263992639936008",
+        "Category": "黃豆芝加哥近期期貨",
+        "RecordDate": "2021/01/23",
+        "Price": "1311.60",
+        "Currency": "美元 分",
+        "Unit": "英斗"
+    },
+    {
+        "IndustryCode": "22823234472928936039",
+        "Industry": "大宗物資",
+        "CategoryCode": "4064335910318813043620729",
+        "Category": "黃豆粉盤價",
+        "RecordDate": "2021/01/23",
+        "Price": "18.45",
+        "Currency": "台幣 元",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "4062931881",
+        "Industry": "麵粉",
+        "CategoryCode": "235674061333437211522173336817263992639936008",
+        "Category": "小麥芝加哥近期期貨",
+        "RecordDate": "2021/01/23",
+        "Price": "634.40",
+        "Currency": "美元 分",
+        "Unit": "英斗"
+    },
+    {
+        "IndustryCode": "2783333026",
+        "Industry": "油脂",
+        "CategoryCode": "2780125289278333249567632200133043620729",
+        "Category": "沙拉油 18L 中盤價",
+        "RecordDate": "2021/01/23",
+        "Price": "725.00",
+        "Currency": "台幣 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "2783333026",
+        "Industry": "油脂",
+        "CategoryCode": "2780125289278333043620729",
+        "Category": "沙拉油盤價",
+        "RecordDate": "2021/01/23",
+        "Price": "665.00",
+        "Currency": "台幣 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "4062935069216973045638364",
+        "Industry": "麵製品相關",
+        "CategoryCode": "39640315634062931881321131996839640199685050107103",
+        "Category": "高筋麵粉統一高一22kg",
+        "RecordDate": "2021/01/23",
+        "Price": "720.00",
+        "Currency": "台幣 元",
+        "Unit": "袋"
+    },
+    {
+        "IndustryCode": "30707278333828325505",
+        "Industry": "石油開採",
+        "CategoryCode": "21271280232406734349293052140727833296943600820729",
+        "Category": "北海布蘭特原油現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "54.98",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "30707278333828325505",
+        "Industry": "石油開採",
+        "CategoryCode": "2406734349293052140727833368172639920729",
+        "Category": "布蘭特原油近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "55.09",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "30707278333828325505",
+        "Industry": "石油開採",
+        "CategoryCode": "35199245032403036629320262140727833368172639920729",
+        "Category": "西德州輕級原油近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "52.27",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "30707278333828325505",
+        "Industry": "石油開採",
+        "CategoryCode": "3519924503240303662932026296943600820729",
+        "Category": "西德州輕級現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "52.23",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "30707278333828325505",
+        "Industry": "石油開採",
+        "CategoryCode": "2646025308366292140727833296943600820729",
+        "Category": "杜拜輕原油現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "55.10",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "2900127833",
+        "Industry": "煉油",
+        "CategoryCode": "289613746727773278335750",
+        "Category": "無鉛汽油92",
+        "RecordDate": "2021/01/23",
+        "Price": "25.00",
+        "Currency": "台幣 元",
+        "Unit": "公升"
+    },
+    {
+        "IndustryCode": "2900127833",
+        "Industry": "煉油",
+        "CategoryCode": "289613746727773278335753",
+        "Category": "無鉛汽油95",
+        "RecordDate": "2021/01/23",
+        "Price": "26.50",
+        "Currency": "台幣 元",
+        "Unit": "公升"
+    },
+    {
+        "IndustryCode": "2900127833",
+        "Industry": "煉油",
+        "CategoryCode": "289613746727773278335756",
+        "Category": "無鉛汽油98",
+        "RecordDate": "2021/01/23",
+        "Price": "28.50",
+        "Currency": "台幣 元",
+        "Unit": "公升"
+    },
+    {
+        "IndustryCode": "808667",
+        "Industry": "PVC",
+        "CategoryCode": "80866732369142147520729",
+        "Category": "PVC 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1160.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008069",
+        "Industry": "PE",
+        "CategoryCode": "72688069369142147520729",
+        "Category": "HDPE進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "971.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008069",
+        "Industry": "PE",
+        "CategoryCode": "76688069369142147520729",
+        "Category": "LDPE進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1321.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "334593932128916",
+        "Industry": "芳香烴",
+        "CategoryCode": "21271280232406734349293052140727833296943600820729",
+        "Category": "北海布蘭特原油現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "54.98",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "334593932128916",
+        "Industry": "芳香烴",
+        "CategoryCode": "2406734349293052140727833368172639920729",
+        "Category": "布蘭特原油近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "55.09",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "334593932128916",
+        "Industry": "芳香烴",
+        "CategoryCode": "35199245032403036629320262140727833368172639920729",
+        "Category": "西德州輕級原油近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "52.27",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "334593932128916",
+        "Industry": "芳香烴",
+        "CategoryCode": "3519924503240303662932026296943600820729",
+        "Category": "西德州輕級現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "52.23",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "334593932128916",
+        "Industry": "芳香烴",
+        "CategoryCode": "2646025308366292140727833296943600820729",
+        "Category": "杜拜輕原油現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "55.10",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "000008377",
+        "Industry": "SM",
+        "CategoryCode": "83773228023287712131232215123200420729",
+        "Category": "SM 海灣區 合約價",
+        "RecordDate": "2020/12/01",
+        "Price": "1383.73",
+        "Currency": "美元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008377",
+        "Industry": "SM",
+        "CategoryCode": "837732280232877121312322969436008",
+        "Category": "SM 海灣區 現貨",
+        "RecordDate": "2021/01/23",
+        "Price": "995.06",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008377",
+        "Industry": "SM",
+        "CategoryCode": "335192005728911219343963638867222832969436008",
+        "Category": "苯乙烯單體韓國現貨",
+        "RecordDate": "2021/01/23",
+        "Price": "918.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "656683",
+        "Industry": "ABS",
+        "CategoryCode": "65668332858215122928940278802260941322001322283210402373620729",
+        "Category": "ABS聚合物(注塑) 中國到岸價",
+        "RecordDate": "2021/01/23",
+        "Price": "1990.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "656683",
+        "Industry": "ABS",
+        "CategoryCode": "6566833285821512292894027880226094132264812133520126210402373620729",
+        "Category": "ABS聚合物(注塑) 東南亞到岸價",
+        "RecordDate": "2021/01/23",
+        "Price": "2090.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "656683",
+        "Industry": "ABS",
+        "CategoryCode": "83773228023287712131232215123200420729",
+        "Category": "SM 海灣區 合約價",
+        "RecordDate": "2020/12/01",
+        "Price": "1383.73",
+        "Currency": "美元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "656683",
+        "Industry": "ABS",
+        "CategoryCode": "837732280232877121312322969436008",
+        "Category": "SM 海灣區 現貨",
+        "RecordDate": "2021/01/23",
+        "Price": "995.06",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008083",
+        "Industry": "PS",
+        "CategoryCode": "8083369142147520729",
+        "Category": "PS進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1200.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008083",
+        "Industry": "PS",
+        "CategoryCode": "83773228023287712131232215123200420729",
+        "Category": "SM 海灣區 合約價",
+        "RecordDate": "2020/12/01",
+        "Price": "1383.73",
+        "Currency": "美元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008083",
+        "Industry": "PS",
+        "CategoryCode": "837732280232877121312322969436008",
+        "Category": "SM 海灣區 現貨",
+        "RecordDate": "2021/01/23",
+        "Price": "995.06",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "22609331843038224067",
+        "Industry": "塑膠皮布",
+        "CategoryCode": "80866732369142147520729",
+        "Category": "PVC 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1160.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000008080",
+        "Industry": "PP",
+        "CategoryCode": "808032369142147520729",
+        "Category": "PP 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1054.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000006578",
+        "Industry": "AN",
+        "CategoryCode": "65668332858215122928940278802260941322001322283210402373620729",
+        "Category": "ABS聚合物(注塑) 中國到岸價",
+        "RecordDate": "2021/01/23",
+        "Price": "1990.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "000006578",
+        "Industry": "AN",
+        "CategoryCode": "6566833285821512292894027880226094132264812133520126210402373620729",
+        "Category": "ABS聚合物(注塑) 東南亞到岸價",
+        "RecordDate": "2021/01/23",
+        "Price": "2090.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "65668332858215122928940278802260941322001322283210402373620729",
+        "Category": "ABS聚合物(注塑) 中國到岸價",
+        "RecordDate": "2021/01/23",
+        "Price": "1990.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "6566833285821512292894027880226094132264812133520126210402373620729",
+        "Category": "ABS聚合物(注塑) 東南亞到岸價",
+        "RecordDate": "2021/01/23",
+        "Price": "2090.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "72688069369142147520729",
+        "Category": "HDPE進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "971.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "76688069369142147520729",
+        "Category": "LDPE進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1321.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "808032369142147520729",
+        "Category": "PP 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1054.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "8083369142147520729",
+        "Category": "PS進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1200.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "80866732369142147520729",
+        "Category": "PVC 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1160.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "83773228023287712131232215123200420729",
+        "Category": "SM 海灣區 合約價",
+        "RecordDate": "2020/12/01",
+        "Price": "1383.73",
+        "Currency": "美元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "307072127026989",
+        "Industry": "石化業",
+        "CategoryCode": "837732280232877121312322969436008",
+        "Category": "SM 海灣區 現貨",
+        "RecordDate": "2021/01/23",
+        "Price": "995.06",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "23612408453506921697",
+        "Industry": "尼龍製品",
+        "CategoryCode": "678076369142147520729",
+        "Category": "CPL進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1500.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "23612408453506921697",
+        "Industry": "尼龍製品",
+        "CategoryCode": "2261222827226123298624067",
+        "Category": "塔夫塔胚布",
+        "RecordDate": "2021/01/23",
+        "Price": "28.00",
+        "Currency": "台幣 元",
+        "Unit": "英碼(YD)"
+    },
+    {
+        "IndustryCode": "21270324062140726009",
+        "Industry": "化纖原料",
+        "CategoryCode": "678076369142147520729",
+        "Category": "CPL進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1500.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "21270324062140726009",
+        "Industry": "化纖原料",
+        "CategoryCode": "80866732369142147520729",
+        "Category": "PVC 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1160.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "678076",
+        "Industry": "CPL",
+        "CategoryCode": "678076369142147520729",
+        "Category": "CPL進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1500.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3265027611",
+        "Industry": "羊毛",
+        "CategoryCode": "27611267812969420729",
+        "Category": "毛條現價",
+        "RecordDate": "2021/01/23",
+        "Price": "12.95",
+        "Currency": "美元 元",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "3265027611",
+        "Industry": "羊毛",
+        "CategoryCode": "38634267923265027611",
+        "Category": "雪梨羊毛",
+        "RecordDate": "2021/01/23",
+        "Price": "1172.00",
+        "Currency": "澳幣 分",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "3234024067",
+        "Industry": "織布",
+        "CategoryCode": "2261222827226123298624067",
+        "Category": "塔夫塔胚布",
+        "RecordDate": "2021/01/23",
+        "Price": "28.00",
+        "Currency": "台幣 元",
+        "Unit": "英碼(YD)"
+    },
+    {
+        "IndustryCode": "32033323402001328216",
+        "Industry": "紡織中游",
+        "CategoryCode": "678076369142147520729",
+        "Category": "CPL進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1500.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "32033323402001328216",
+        "Industry": "紡織中游",
+        "CategoryCode": "2261222827226123298624067",
+        "Category": "塔夫塔胚布",
+        "RecordDate": "2021/01/23",
+        "Price": "28.00",
+        "Currency": "台幣 元",
+        "Unit": "英碼(YD)"
+    },
+    {
+        "IndustryCode": "38651322183865132412",
+        "Industry": "電線電纜",
+        "CategoryCode": "76766880693267708232296943600820729",
+        "Category": "LLDPE CFR 現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "971.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "38651322183865132412",
+        "Industry": "電線電纜",
+        "CategoryCode": "80866732369142147520729",
+        "Category": "PVC 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1160.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "38651322183865132412",
+        "Industry": "電線電纜",
+        "CategoryCode": "205232595837569296943600820729",
+        "Category": "倫敦鋁現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "1975.50",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "38651322183865132412",
+        "Industry": "電線電纜",
+        "CategoryCode": "37569215123732976776932242352338437327",
+        "Category": "鋁合金LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "1960.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3318424118",
+        "Industry": "膠帶",
+        "CategoryCode": "808032369142147520729",
+        "Category": "PP 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1054.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "208542018221270240372998621697",
+        "Industry": "其他化工產品",
+        "CategoryCode": "300641999337255",
+        "Category": "異丙醇",
+        "RecordDate": "2021/01/23",
+        "Price": "45.00",
+        "Currency": "台幣 元",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "208542018221270240372998621697",
+        "Industry": "其他化工產品",
+        "CategoryCode": "37259372402005737231",
+        "Category": "醋酸乙酯",
+        "RecordDate": "2021/01/23",
+        "Price": "47.00",
+        "Currency": "台幣 元",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "37329236602431426448",
+        "Industry": "金屬建材",
+        "CategoryCode": "205232595837569296943600820729",
+        "Category": "倫敦鋁現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "1975.50",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "37329236602431426448",
+        "Industry": "金屬建材",
+        "CategoryCode": "37569205232595876776932242352338437327",
+        "Category": "鋁倫敦LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "1428225.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3202528479",
+        "Industry": "紙漿",
+        "CategoryCode": "78798269886967793238263324063202528479",
+        "Category": "NOREXECO 長纖紙漿",
+        "RecordDate": "2020/12/01",
+        "Price": "875.00",
+        "Currency": "美元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3202528479",
+        "Industry": "紙漿",
+        "CategoryCode": "78798269886967793230701324063202528479",
+        "Category": "NOREXECO 短纖紙漿",
+        "RecordDate": "2020/12/01",
+        "Price": "680.00",
+        "Currency": "美元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3202528479",
+        "Industry": "紙漿",
+        "CategoryCode": "2127132654382633240628479",
+        "Category": "北美長纖漿",
+        "RecordDate": "2021/01/23",
+        "Price": "695.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3202528479",
+        "Industry": "紙漿",
+        "CategoryCode": "3826332406274722795429694360087079698845698582",
+        "Category": "長纖歐洲現貨FOEX-EUR",
+        "RecordDate": "2019/06/01",
+        "Price": "932.09",
+        "Currency": "歐元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "24037269892999232025",
+        "Industry": "工業用紙",
+        "CategoryCode": "29926269743345532025",
+        "Category": "瓦楞芯紙",
+        "RecordDate": "2021/01/23",
+        "Price": "21112.50",
+        "Currency": "台幣 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "23478242372999232025",
+        "Industry": "家庭用紙",
+        "CategoryCode": "2127132654382633240628479",
+        "Category": "北美長纖漿",
+        "RecordDate": "2021/01/23",
+        "Price": "695.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "368963202526989",
+        "Industry": "造紙業",
+        "CategoryCode": "2127132654382633240628479",
+        "Category": "北美長纖漿",
+        "RecordDate": "2021/01/23",
+        "Price": "695.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "368963202526989",
+        "Industry": "造紙業",
+        "CategoryCode": "29926269743345532025",
+        "Category": "瓦楞芯紙",
+        "RecordDate": "2021/01/23",
+        "Price": "21112.50",
+        "Currency": "台幣 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3762832986",
+        "Industry": "鋼胚",
+        "CategoryCode": "37628264953220013376283043620729",
+        "Category": "鋼板 中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "24479.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "29105365553762825458",
+        "Industry": "熱軋鋼捲",
+        "CategoryCode": "2910536555376282169720013376283043620729",
+        "Category": "熱軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "20544.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3762831563",
+        "Industry": "鋼筋",
+        "CategoryCode": "31481316803762831563322133553209982019719978",
+        "Category": "竹節鋼筋 南5分以上",
+        "RecordDate": "2021/01/23",
+        "Price": "20100.00",
+        "Currency": "台幣 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3762831563",
+        "Industry": "鋼筋",
+        "CategoryCode": "2429037628453592033288",
+        "Category": "廢鋼-豐興",
+        "RecordDate": "2021/01/23",
+        "Price": "11200.00",
+        "Currency": "台幣 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3762831563",
+        "Industry": "鋼筋",
+        "CategoryCode": "37628315633592033288242882013220729",
+        "Category": "鋼筋豐興廠交價",
+        "RecordDate": "2021/01/23",
+        "Price": "19900.00",
+        "Currency": "台幣 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "2241137628",
+        "Industry": "型鋼",
+        "CategoryCode": "37628264953220013376283043620729",
+        "Category": "鋼板 中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "24479.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "376283208027083",
+        "Industry": "鋼結構",
+        "CategoryCode": "37628264953220013376283043620729",
+        "Category": "鋼板 中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "24479.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3762831649",
+        "Industry": "鋼管",
+        "CategoryCode": "2091936555376282169720013376283043620729",
+        "Category": "冷軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "22485.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3762831649",
+        "Industry": "鋼管",
+        "CategoryCode": "2910536555376282169720013376283043620729",
+        "Category": "熱軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "20544.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "20919365553762825458",
+        "Industry": "冷軋鋼捲",
+        "CategoryCode": "2091936555376282169720013376283043620729",
+        "Category": "冷軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "22485.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "20919365553762825458",
+        "Industry": "冷軋鋼捲",
+        "CategoryCode": "2910536555376282169720013376283043620729",
+        "Category": "熱軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "20544.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "37709375733762825458",
+        "Industry": "鍍鋅鋼捲",
+        "CategoryCode": "2091936555376282169720013376283043620729",
+        "Category": "冷軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "22485.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "199813788537628",
+        "Industry": "不鏽鋼",
+        "CategoryCode": "2091936555376282169720013376283043620729",
+        "Category": "冷軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "22485.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "199813788537628",
+        "Industry": "不鏽鋼",
+        "CategoryCode": "205232595837811199772049126376263993600820729",
+        "Category": "倫敦鎳三個月期貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "17938.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "293052753037628",
+        "Industry": "特殊鋼",
+        "CategoryCode": "205232595837811296943600820729",
+        "Category": "倫敦鎳現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "17906.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "293052753037628",
+        "Industry": "特殊鋼",
+        "CategoryCode": "37811205232595876776932242352338437327",
+        "Category": "鎳倫敦LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "248886.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "28900284223762825458",
+        "Industry": "烤漆鋼捲",
+        "CategoryCode": "2091936555376282169720013376283043620729",
+        "Category": "冷軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "22485.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "38750379413732923660",
+        "Industry": "非鐵金屬",
+        "CategoryCode": "32016320043750926399360082072926684",
+        "Category": "紐約銅期貨價格",
+        "RecordDate": "2021/01/23",
+        "Price": "361.02",
+        "Currency": "美元 分",
+        "Unit": "LB"
+    },
+    {
+        "IndustryCode": "0000037509",
+        "Industry": "銅",
+        "CategoryCode": "205232595839640320263750926997296943600820729",
+        "Category": "倫敦高級銅極現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "7872.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "0000037509",
+        "Industry": "銅",
+        "CategoryCode": "32016320043750926399360082072926684",
+        "Category": "紐約銅期貨價格",
+        "RecordDate": "2021/01/23",
+        "Price": "361.02",
+        "Currency": "美元 分",
+        "Unit": "LB"
+    },
+    {
+        "IndustryCode": "0000037509",
+        "Industry": "銅",
+        "CategoryCode": "37509205232595876776932242352338437327",
+        "Category": "銅倫敦LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "77175.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "4064337329",
+        "Industry": "黃金",
+        "CategoryCode": "20523259583732920729322106926085296943600820729",
+        "Category": "倫敦金價 前日現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "1862.10",
+        "Currency": "美元 元",
+        "Unit": "英兩"
+    },
+    {
+        "IndustryCode": "4064337329",
+        "Industry": "黃金",
+        "CategoryCode": "32016320043732920729322106926085259103043620729",
+        "Category": "紐約金價 前日收盤價",
+        "RecordDate": "2021/01/23",
+        "Price": "1870.02",
+        "Currency": "美元 元",
+        "Unit": "英兩"
+    },
+    {
+        "IndustryCode": "4064337329",
+        "Industry": "黃金",
+        "CategoryCode": "40643373292969436008322001320449236162180620986",
+        "Category": "黃金現貨 中信局售出",
+        "RecordDate": "2021/01/23",
+        "Price": "1687350.00",
+        "Currency": "台幣 元",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "375692582422411",
+        "Industry": "鋁擠型",
+        "CategoryCode": "205232595837569296943600820729",
+        "Category": "倫敦鋁現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "1975.50",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "2649537628",
+        "Industry": "板鋼",
+        "CategoryCode": "2091936555376282169720013376283043620729",
+        "Category": "冷軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "22485.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "2649537628",
+        "Industry": "板鋼",
+        "CategoryCode": "2910536555376282169720013376283043620729",
+        "Category": "熱軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "20544.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "2649537628",
+        "Industry": "板鋼",
+        "CategoryCode": "37628264953220013376283043620729",
+        "Category": "鋼板 中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "24479.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3665032974",
+        "Industry": "輪胎",
+        "CategoryCode": "272333318426032211522236982838351368172639920729",
+        "Category": "橡膠新加坡RSS3近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "232.50",
+        "Currency": "美元 分",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "27233331842403726989",
+        "Industry": "橡膠工業",
+        "CategoryCode": "272333318426032211522236982838351368172639920729",
+        "Category": "橡膠新加坡RSS3近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "232.50",
+        "Currency": "美元 分",
+        "Unit": "KG"
+    },
+    {
+        "IndustryCode": "3665022280",
+        "Industry": "輪圈",
+        "CategoryCode": "205232595837569296943600820729",
+        "Category": "倫敦鋁現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "1975.50",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "3665022280",
+        "Industry": "輪圈",
+        "CategoryCode": "37569205232595876776932242352338437327",
+        "Category": "鋁倫敦LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "1428225.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "25955291052716932068",
+        "Industry": "散熱模組",
+        "CategoryCode": "205232595837569296943600820729",
+        "Category": "倫敦鋁現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "1975.50",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "25955291052716932068",
+        "Industry": "散熱模組",
+        "CategoryCode": "37569205232595876776932242352338437327",
+        "Category": "鋁倫敦LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "1428225.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "377623756921512373292280627580",
+        "Industry": "鎂鋁合金外殼",
+        "CategoryCode": "205232595837569296943600820729",
+        "Category": "倫敦鋁現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "1975.50",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "377623756921512373292280627580",
+        "Industry": "鎂鋁合金外殼",
+        "CategoryCode": "37569215123732976776932242352338437327",
+        "Category": "鋁合金LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "1960.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "36008273313332236939",
+        "Industry": "貨櫃航運",
+        "CategoryCode": "240522534339340224113236939360272535125976",
+        "Category": "巴拿馬型 運費指數",
+        "RecordDate": "2021/01/23",
+        "Price": "1659.00",
+        "Currency": "null",
+        "Unit": "指數"
+    },
+    {
+        "IndustryCode": "36008273313332236939",
+        "Industry": "貨櫃航運",
+        "CategoryCode": "278743264530340280233220094360082535125976",
+        "Category": "波羅的海 乾貨指數",
+        "RecordDate": "2021/01/23",
+        "Price": "1810.00",
+        "Currency": "null",
+        "Unit": "指數"
+    },
+    {
+        "IndustryCode": "36008273313332236939",
+        "Industry": "貨櫃航運",
+        "CategoryCode": "2802323805224113236939360272535125976",
+        "Category": "海峽型 運費指數",
+        "RecordDate": "2021/01/23",
+        "Price": "2970.00",
+        "Currency": "null",
+        "Unit": "指數"
+    },
+    {
+        "IndustryCode": "25955350373332236939",
+        "Industry": "散裝航運",
+        "CategoryCode": "240522534339340224113236939360272535125976",
+        "Category": "巴拿馬型 運費指數",
+        "RecordDate": "2021/01/23",
+        "Price": "1659.00",
+        "Currency": "null",
+        "Unit": "指數"
+    },
+    {
+        "IndustryCode": "25955350373332236939",
+        "Industry": "散裝航運",
+        "CategoryCode": "278743264530340280233220094360082535125976",
+        "Category": "波羅的海 乾貨指數",
+        "RecordDate": "2021/01/23",
+        "Price": "1810.00",
+        "Currency": "null",
+        "Unit": "指數"
+    },
+    {
+        "IndustryCode": "25955350373332236939",
+        "Industry": "散裝航運",
+        "CategoryCode": "2802323805224113236939360272535125976",
+        "Category": "海峽型 運費指數",
+        "RecordDate": "2021/01/23",
+        "Price": "2970.00",
+        "Currency": "null",
+        "Unit": "指數"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "21271280232406734349293052140727833296943600820729",
+        "Category": "北海布蘭特原油現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "54.98",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "2406734349293052140727833368172639920729",
+        "Category": "布蘭特原油近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "55.09",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "35199245032403036629320262140727833368172639920729",
+        "Category": "西德州輕級原油近期價",
+        "RecordDate": "2021/01/23",
+        "Price": "52.27",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "3519924503240303662932026296943600820729",
+        "Category": "西德州輕級現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "52.23",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "2646025308366292140727833296943600820729",
+        "Category": "杜拜輕原油現貨價",
+        "RecordDate": "2021/01/23",
+        "Price": "55.10",
+        "Currency": "美元 元",
+        "Unit": "桶"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "33322313542912327833322228320839322182001327833",
+        "Category": "航空燃油 國內線中油",
+        "RecordDate": "2021/01/01",
+        "Price": "13.24",
+        "Currency": "元",
+        "Unit": "公升"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "33322313542912327833322228320839322182148822609",
+        "Category": "航空燃油 國內線台塑",
+        "RecordDate": "2021/01/01",
+        "Price": "13.02",
+        "Currency": "元",
+        "Unit": "公升"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "33322313542912327833322228338555322182001327833",
+        "Category": "航空燃油 國際線中油",
+        "RecordDate": "2021/01/01",
+        "Price": ".39",
+        "Currency": "美元",
+        "Unit": "公升"
+    },
+    {
+        "IndustryCode": "3135436939",
+        "Industry": "空運",
+        "CategoryCode": "33322313542912327833322228338555322182148822609",
+        "Category": "航空燃油 國際線台塑",
+        "RecordDate": "2021/01/01",
+        "Price": "1.48",
+        "Currency": "美元",
+        "Unit": "GAL."
+    },
+    {
+        "IndustryCode": "3506932592",
+        "Industry": "製罐",
+        "CategoryCode": "2091936555376282169720013376283043620729",
+        "Category": "冷軋鋼品中鋼盤價",
+        "RecordDate": "2021/03/01",
+        "Price": "22485.00",
+        "Currency": "元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "2994233995",
+        "Industry": "瓶蓋",
+        "CategoryCode": "808032369142147520729",
+        "Category": "PP 進口價",
+        "RecordDate": "2021/01/23",
+        "Price": "1054.00",
+        "Currency": "美元 元",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "228252898227683",
+        "Industry": "天然氣",
+        "CategoryCode": "27773386512084929983241853221822825289822768350",
+        "Category": "汽電共生幹線天然氣2",
+        "RecordDate": "2021/01/02",
+        "Price": "8.22",
+        "Currency": "元",
+        "Unit": "M3"
+    },
+    {
+        "IndustryCode": "228252898227683",
+        "Industry": "天然氣",
+        "CategoryCode": "23478242372999276807132321473755921830",
+        "Category": "家庭用LPG 經銷商",
+        "RecordDate": "2020/12/05",
+        "Price": "16.86",
+        "Currency": "元",
+        "Unit": "公斤"
+    },
+    {
+        "IndustryCode": "228252898227683",
+        "Industry": "天然氣",
+        "CategoryCode": "30332386512999225142209082637622825289822768350",
+        "Category": "發電用戶冬月天然氣2",
+        "RecordDate": "2020/12/05",
+        "Price": "7.48",
+        "Currency": "元",
+        "Unit": "M3"
+    },
+    {
+        "IndustryCode": "228252898227683",
+        "Industry": "天然氣",
+        "CategoryCode": "30332386512999225142208542018222825289822768350",
+        "Category": "發電用戶其他天然氣2",
+        "RecordDate": "2020/12/05",
+        "Price": "7.58",
+        "Currency": "元",
+        "Unit": "M3"
+    },
+    {
+        "IndustryCode": "228252898227683",
+        "Industry": "天然氣",
+        "CategoryCode": "30332386512999225142227992637622825289822768350",
+        "Category": "發電用戶夏月天然氣2",
+        "RecordDate": "2020/12/05",
+        "Price": "7.64",
+        "Currency": "元",
+        "Unit": "M3"
+    },
+    {
+        "IndustryCode": "0000037467",
+        "Industry": "鉛",
+        "CategoryCode": "37467205232595876776932242352338437327",
+        "Category": "鉛倫敦LME 庫存量",
+        "RecordDate": "2021/01/27",
+        "Price": "107175.00",
+        "Currency": "null",
+        "Unit": "噸"
+    },
+    {
+        "IndustryCode": "369392120538795",
+        "Industry": "運動鞋",
+        "CategoryCode": "698665322148822609215613318032026",
+        "Category": "EVA 台塑吹膜級",
+        "RecordDate": "2021/01/01",
+        "Price": "68.00",
+        "Currency": "元",
+        "Unit": "Kg"
+    }
+]

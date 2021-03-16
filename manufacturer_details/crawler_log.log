@@ -1,0 +1,90 @@
+2021-01-27 15:55:26 :checkInvoiceERR-seq:Message: no such element: Unable to locate element: {"method":"css selector","selector":".mailinhtml"}
+  (Session info: headless chrome=88.0.4324.104)
+
+2021-01-27 16:20:15 :checkInvoiceERR-56:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-27 16:22:10 :checkInvoiceERR-57:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-27 16:24:08 :checkInvoiceERR-58:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-28 15:38:01 :getjudbookOK:東捷資訊服務股份有限公司-臺灣臺北地方法院109年訴字第5507號民事裁定 download complete!
+2021-01-28 15:44:22 :[getjudbookOK]東捷資訊服務股份有限公司-臺灣臺北地方法院109年訴字第5507號民事裁定 download complete!
+2021-01-28 16:05:08 :[checkInvoiceERR]38Message: no such element: Unable to locate element: {"method":"css selector","selector":".mailinhtml"}
+  (Session info: headless chrome=88.0.4324.104)
+
+2021-01-28 16:06:54 :[checkInvoiceERR]39Message: no such element: Unable to locate element: {"method":"css selector","selector":".mailinhtml"}
+  (Session info: headless chrome=88.0.4324.104)
+
+2021-01-28 16:08:38 :[checkInvoiceERR]41Message: no such element: Unable to locate element: {"method":"css selector","selector":".mailinhtml"}
+  (Session info: headless chrome=88.0.4324.104)
+
+2021-01-28 16:10:28 :[checkInvoiceERR]42Message: no such element: Unable to locate element: {"method":"css selector","selector":".mailinhtml"}
+  (Session info: headless chrome=88.0.4324.104)
+
+2021-01-28 16:13:14 :[checkInvoiceERR]43Message: no such element: Unable to locate element: {"method":"css selector","selector":".mailinhtml"}
+  (Session info: headless chrome=88.0.4324.104)
+
+2021-01-28 16:24:06 :[checkInvoiceERR]43Message: element click intercepted: Element <input class="btn btn-primary" type="submit" onclick="queryProc()" value="確認送出"> is not clickable at point (461, 633). Other element would receive the click: <a href="https://www.etax.nat.gov.tw/etwmain/front/ETW118W/VIEW/1210" title="連結到 跨局申辦服務">...</a>
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-28 16:36:21 :[checkInvoiceERR]56Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-28 16:38:15 :[checkInvoiceERR]57Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-28 16:40:12 :[checkInvoiceERR]58Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-28 17:37:12 :[getjudbookERR]42'WebElement' object has no attribute 'get'
+2021-01-28 17:43:15 :[getjudbookERR]42name 'By' is not defined
+2021-01-28 17:58:13 :[getjudbookERR]42[Errno 2] No such file or directory: 'E:\\work\\crawler\\manufacturer_details\\42\\judiciallist.json'
+2021-01-29 09:40:37 :[getjudbookERR]42Message: chrome not reachable
+
+2021-01-29 09:47:01 :[getjudbookOK]來來股份有限公司-臺灣臺北地方法院106年勞訴字第201號民事判決 download complete!
+2021-01-29 09:55:36 :[getjudbookOK]來來股份有限公司-臺灣臺北地方法院106年勞訴字第201號民事判決 download complete!
+2021-01-29 10:21:19 :[checkInvoiceERR]56Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-29 10:23:12 :[checkInvoiceERR]57Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-01-29 10:25:06 :[checkInvoiceERR]58Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="txCompany"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-05 10:35:12 :[getjudbookERR]38[WinError 2] 系統找不到指定的檔案。: 'E:\\work\\crawler\\manufacturer_details\\38\\107,司執消債更,152,20190911.pdf.pdf' -> 'E:\\work\\crawler\\manufacturer_details\\38\\臺灣臺北地方法院107年司執消債更字第152號民事裁定.pdf'
+2021-02-05 10:37:38 :[getjudbookOK]哈哈公司-臺灣臺北地方法院107年司執消債更字第152號民事裁定 download complete!
+2021-02-05 10:38:01 :[getjudbookOK]哈哈公司-臺灣臺北地方法院107年消債更字第226號民事裁定 download complete!
+2021-02-09 09:46:40 :[checkInvoiceERR]38Message: no such element: Unable to locate element: {"method":"css selector","selector":".mailinhtml"}
+  (Session info: chrome=88.0.4324.146)
+
+2021-02-09 09:53:17 :[checkInvoiceERR]38Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='財政資訊中心 <webmail@etax.nat.gov.tw>']"}
+  (Session info: chrome=88.0.4324.146)
+
+2021-02-09 09:55:04 :[checkInvoiceERR]38Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='財政資訊中心 <webmail@etax.nat.gov.tw>']"}
+  (Session info: chrome=88.0.4324.146)
+
+2021-02-09 10:06:54 :[checkInvoiceERR]38name 'drive' is not defined
+2021-02-09 10:36:25 :[checkInvoiceERR]38name 'driver' is not defined
+2021-02-09 10:36:40 :[checkInvoiceERR]39name 'driver' is not defined
+2021-02-09 10:40:37 :[checkInvoiceERR]39Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.146)
+
+2021-02-09 10:44:18 :[checkInvoiceERR]38Message: 
+
+2021-02-09 10:45:30 :[checkInvoiceERR]39Message: 
+
+2021-02-09 10:46:43 :[checkInvoiceERR]41Message: 
+
+2021-02-09 10:47:57 :[checkInvoiceERR]42Message: 
+
+2021-02-09 10:49:15 :[checkInvoiceERR]43Message: 
+
+2021-02-09 13:57:08 :[checkInvoiceERR]38Message: 
+
+2021-02-09 13:59:45 :[checkInvoiceERR]38Message: 
+
