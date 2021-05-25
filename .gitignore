@@ -1,6 +1,11 @@
 */venv
 */debug.log
 */__pycache__
+*/chromedriver.exe
+debug.log
 copper
 steel
 manufacturer_details/crawler.ps1
+smartcare/ref.py
+smartcare/chromedriver.exe
+smartcare/result
