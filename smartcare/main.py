@@ -58,13 +58,13 @@ if __name__ == '__main__':
     five_year_day = (datetime.datetime.now() - datetime.timedelta(days=1825)).strftime("%Y/%m/%d")
     results = []
     # already crawler list
-    already = os.listdir('result')
+    already = os.listdir(data_path)
     # init selenium
     driver = initSelenium(proxy=None)
     #  enter account
     driver.get("{}".format(login_page))
-    time.sleep(1)
-    driver.switch_to_alert().accept()
+    # time.sleep(1)
+    # driver.switch_to_alert().accept()
     time.sleep(1)
     UI.WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_id("Account"))
     driver.find_element_by_id("Account").send_keys(acc)
@@ -156,14 +156,20 @@ if __name__ == '__main__':
         result["慣用語言"] = {'國語':mandarin , '台語':taiwanese , '客語':hakka , '原住民語':aboriginal , '其他':otherLanguage}
         # address
         address_detail_city = driver.find_element_by_xpath("//span[@aria-owns='AddressDetailCity_listbox']").text.split('\n')[0]
+        address_detail_city = address_detail_city if address_detail_city != '--縣市' else ''
         address_detail_area = driver.find_element_by_xpath("//span[@aria-owns='AddressDetailArea_listbox']").text.split('\n')[0]
+        address_detail_area = address_detail_area if address_detail_area != '--鄉鎮市區' else ''
         address_detail_address = driver.find_element_by_xpath("//input[@id='AddressDetailAddress']").get_attribute("value")
-        result["戶籍地址"] = address_detail_city + address_detail_area + address_detail_address
+        address_detail_address = address_detail_address if address_detail_address != ' ' else ''
+        result["戶籍地址"] = {'市縣':address_detail_city , '鄉鎮市區':address_detail_area , '詳細地址':address_detail_address }
         # mail address
         mailing_address_detail_city = driver.find_element_by_xpath("//span[@aria-owns='MailingAddressDetailCity_listbox']").text.split('\n')[0]
+        mailing_address_detail_city = mailing_address_detail_city if mailing_address_detail_city != '--縣市' else ''
         mailing_address_detail_area = driver.find_element_by_xpath("//span[@aria-owns='MailingAddressDetailArea_listbox']").text.split('\n')[0]
-        address_detail_address = driver.find_element_by_xpath("//input[@id='MailingAddressDetailAddress']").get_attribute("value")
-        result["通訊地址"] = mailing_address_detail_city + mailing_address_detail_area + address_detail_address
+        mailing_address_detail_area = mailing_address_detail_area if mailing_address_detail_area != '--鄉鎮市區' else ''
+        mailing_address_detail_address = driver.find_element_by_xpath("//input[@id='MailingAddressDetailAddress']").get_attribute("value")
+        mailing_address_detail_address = mailing_address_detail_address if mailing_address_detail_address != ' ' else ''
+        result["通訊地址"] = {'市縣':mailing_address_detail_city , '鄉鎮市區':mailing_address_detail_area , '詳細地址':mailing_address_detail_address }
         # ContactPerson
         result["緊急聯絡人"],r = [],[]
         menu_table = driver.find_element_by_xpath("//div[@id='ContactPersonGrid']/div[3]/table/tbody")
@@ -212,7 +218,7 @@ if __name__ == '__main__':
         print('[info] {} data crawler success!'.format(result["姓名"]))
         # save json file
         data_to_json = json.dumps(result, ensure_ascii=False)
-        with open('result/{}.json'.format(result["姓名"]), 'w',encoding='utf-8') as outfile:
+        with open('{}/{}.json'.format(data_path,result["姓名"]), 'w',encoding='utf-8') as outfile:
             outfile.write(data_to_json)
         
         time.sleep(5)
