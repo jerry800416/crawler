@@ -63,6 +63,7 @@ if __name__ == '__main__':
     driver = initSelenium(proxy=None)
     #  enter account
     driver.get("{}".format(login_page))
+    #  if alert box open it!!
     # time.sleep(1)
     # driver.switch_to_alert().accept()
     time.sleep(1)
