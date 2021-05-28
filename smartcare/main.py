@@ -47,6 +47,46 @@ def go2log(log_path, e):
         f.write('{} :{}\r\n'.format(time.strftime("%Y-%m-%d %H:%M:%S"), str(e)))
 
 
+def getBedRecord(driver):
+    '''
+    catch bed information(only catch ones)
+    '''
+    results = []
+    # open bed record
+    driver.execute_script('window.open("{}")'.format(bed_record))
+    driver.switch_to_window(driver.window_handles[-1])
+    time.sleep(3)
+    # all bed num
+    get_num = int((driver.find_element_by_xpath("//div[@id='BedRecordGrid']/div[last()]/span").text.split('共 ')[1].split('筆')[0]))
+    # get this page num from table
+    this_page_num = int((driver.find_element_by_xpath("//div[@id='BedRecordGrid']/div[last()]/span").text.split('共 ')[0].split(' - ')[1]))
+    for j in range((math.ceil((get_num / this_page_num)*1))):
+        if get_num <= this_page_num :
+            this_page_num = get_num
+        for k in range(this_page_num) :
+            k +=1
+            # get area
+            area = driver.find_element_by_xpath("//div[@id='BedRecordGrid']/div[2]/table/tbody/tr[{}]/td[1]".format(k)).text
+            # get bed site
+            bed_site = driver.find_element_by_xpath("//div[@id='BedRecordGrid']/div[2]/table/tbody/tr[{}]/td[2]".format(k)).text + driver.find_element_by_xpath("//div[@id='BedRecordGrid']/div[2]/table/tbody/tr[{}]/td[3]".format(k)).text
+            # get status
+            status = driver.find_element_by_xpath("//div[@id='BedRecordGrid']/div[2]/table/tbody/tr[{}]/td[5]".format(k)).text
+            results.append({'區域':area,'房號':bed_site,'狀態':status})
+        get_num -= this_page_num
+        # click 下一頁
+        driver.find_element_by_xpath("//div[@id='BedRecordGrid']/div[last()]/a[3]").send_keys('\n')
+        time.sleep(1)
+    driver.close()
+
+    # save json file
+    data_to_json = json.dumps(results, ensure_ascii=False)
+    with open('{}/bedInfo.json'.format(data_path), 'w',encoding='utf-8') as outfile:
+        outfile.write(data_to_json)
+
+    # switch to one 
+    driver.switch_to_window(driver.window_handles[0])
+    return driver
+
 
 
 if __name__ == '__main__':
@@ -63,10 +103,10 @@ if __name__ == '__main__':
     driver = initSelenium(proxy=None)
     #  enter account
     driver.get("{}".format(login_page))
-    #  if alert box open it!!
-    # time.sleep(1)
-    # driver.switch_to_alert().accept()
     time.sleep(1)
+    #  if alert box open it!!
+    # driver.switch_to_alert().accept()
+    # time.sleep(1)
     UI.WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_id("Account"))
     driver.find_element_by_id("Account").send_keys(acc)
     time.sleep(2)
@@ -77,6 +117,9 @@ if __name__ == '__main__':
     # login
     driver.find_element_by_xpath("//button[@type='submit']").click()
     print('[info] logging success')
+    # (可選) 抓取床位資訊
+    # driver = getBedRecord(driver)
+
     # switch to 基資維護
     driver.execute_script('window.open("{}")'.format(person_detail))
     driver.switch_to_window(driver.window_handles[1])
@@ -134,6 +177,9 @@ if __name__ == '__main__':
         result["年齡"] = driver.find_element_by_xpath("//input[@ng-model='layoutPatient.Age']").get_attribute("value")
         # gender
         result["性別"] = driver.find_element_by_xpath("//input[@ng-model='layoutPatient.SexName']").get_attribute("value")
+        # bed site
+        bed_site = driver.find_element_by_xpath("//input[@ng-model='layoutPatient.BedSite']").get_attribute("value")
+        result["床位"] = '' if bed_site == '' else bed_site.split('F,')[1].replace(',','')
         # cases date
         result["開案日期"] = driver.find_element_by_xpath("//input[@id='CaseSDate']").get_attribute("value")
         # status
