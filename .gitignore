@@ -9,3 +9,4 @@ manufacturer_details/crawler.ps1
 smartcare/ref.py
 smartcare/chromedriver.exe
 smartcare/results
+smartcare/physiological
