@@ -377,19 +377,19 @@ if __name__ == '__main__':
 
 
     # (可選) 抓取床位資訊
-    '''
+    # '''
     driver,results = getBedRecord(driver)
     results = json.dumps(results, ensure_ascii=False)
     with open('{}/bedInfo.json'.format(data_path), 'w',encoding='utf-8') as f:
         f.write(results)
-    '''
+    # '''
 
     # (必選) 抓取所有人名
     driver,name_list = getAllName(driver)
 
 
     # (可選) 抓取生命徵象資料
-    '''
+    # '''
     for name in name_list:
         driver,results = getPhysiologicalMeasurements(driver,name,how_many_day=60)
         if results != False :
@@ -398,9 +398,10 @@ if __name__ == '__main__':
                 f.write(results)
         else :
             continue
-    '''
+    # '''
 
     #  (可選) 抓取基本資料
+    # '''
     for name in name_list:
         driver,results = getBasicInfo(driver,name,how_many_day=1825)
         if results != False :
@@ -409,6 +410,6 @@ if __name__ == '__main__':
                 f.write(results)
         else :
             continue
-
+    # '''
 
     driver.quit()
