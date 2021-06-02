@@ -1,7 +1,7 @@
 # coding=utf-8
 # 桃園市私立長青老人長期照顧中心(養護型)
 
-import json,datetime,time,os,math,json
+import json,datetime,time,os,math,json,csv
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By as BY
@@ -156,7 +156,7 @@ def getBasicInfo(driver,name,how_many_day):
     bed_site = driver.find_element_by_xpath("//input[@ng-model='layoutPatient.BedSite']").get_attribute("value")
     result["床位"] = '' if bed_site == '' else bed_site.split('F,')[1].replace(',','')
     # cases date
-    result["開案日期"] = driver.find_element_by_xpath("//input[@id='CaseSDate']").get_attribute("value")
+    result["開案日期"] = driver.find_element_by_xpath("//input[@ng-model='layoutPatient.CaseDateF']").get_attribute("value")
     # status
     result["開案狀態"] = driver.find_element_by_xpath("//input[@id='Status']").get_attribute("value")
     # alleviate medical care
@@ -362,10 +362,77 @@ def getPhysiologicalMeasurements(driver,name,how_many_day=60):
 
 
 
+def HospitalizedIndicatorsReport(input_file,output_path,get_code_path):
+    '''
+    需先下載好資料csv檔案，下載位置
+    指標/報表管理 > 指標表單 > 非計畫性轉至急性醫院住院
+    選定區間之後查詢完成並下載csv檔案
+    '''
+    with open(input_file, newline='',encoding='utf-8') as csvfile:
+        rows = csv.reader(csvfile)
+        c = 0
+        for row in rows:
+            if c == 0 :
+                c += 1
+                continue
+            result = {}
+            result['姓名'] = row[1]
+            with open(get_code_path+'/{}.json'.format(result['姓名']), 'r',encoding='utf-8') as f1:
+                data = json.load(f1)
+            result['編號'] = data['編號']
+            result['性別'] = row[3]
+            result['生日'] = row[5]
+            result['開案日'] = row[7]
+            result['床位'] = row[9]
+            result['填表人員'] = row[11]
+            result['入住七十二小時內'] = False if row[13]=='0' else True 
+            for i in [row[15],row[16],row[17],row[18]]:
+                if i[0] == '1':
+                    result['發生班別'] = i[1:]
+            result['住院天數'] = row[20]
+            result['住院日期'] = row[22]
+            result['出院日期'] = row[24]
+            result['住院醫院'] = row[26]
+            result['科別'] = row[28]
+            result['主治醫師'] = row[30]
+            result['陪同住院者'] = row[32]
+            result['陪同者關係'] = row[34]
+            result['陪同者電話'] = row[36]
+            for i in [row[38],row[39]]:
+                if i[0] == '1':
+                    result['出院帶藥'] = i[1:]
+            for i in [row[41],row[42],row[43],row[44],row[45]]:
+                if i[0] == '1':
+                    result['住院原因'] = i[1:]
+            for i in [row[46],row[47],row[48],row[49],row[50],row[51]]:
+                if i[0] == '1':
+                    result['導因分析'] = i[1:]+row[52]
+            for i in [row[55],row[56],row[57],row[58],row[59],row[60]]:
+                if i[0] == '1':
+                    result['處理結果'] = i[1:]
+            for i in [row[62],row[63]]:
+                if i[0] == '1':
+                    result['類別分析'] = i[1:]
+            result['疾病診斷'] = row[65]
+            result['原因分析'] = row[67]
+            result['改善措施'] = row[69]
+            result['後續追蹤'] = row[71]
+            result['其他備註'] = row[73]
+            # output_path
+            result = json.dumps(result, ensure_ascii=False)
+            with open('{}/{}.json'.format(output_path,str(c)), 'w',encoding='utf-8') as f2:
+                f2.write(result)
+            c += 1
+
+
+
+    
+
+
+
 if __name__ == '__main__':
 
-    '''
-    '''
+
     print('[info] start crawler')
 
     # init selenium
@@ -377,12 +444,16 @@ if __name__ == '__main__':
 
 
     # (可選) 抓取床位資訊
-    # '''
+    '''
     driver,results = getBedRecord(driver)
     results = json.dumps(results, ensure_ascii=False)
     with open('{}/bedInfo.json'.format(data_path), 'w',encoding='utf-8') as f:
         f.write(results)
-    # '''
+    '''
+
+    # (可選) 抓取非計畫性轉至急性醫院住院紀錄單(評鑑)
+    # driver = HospitalizedIndicatorsReport(driver,how_many_day=3650)
+
 
     # (必選) 抓取所有人名
     driver,name_list = getAllName(driver)
@@ -413,3 +484,6 @@ if __name__ == '__main__':
     # '''
 
     driver.quit()
+
+    # (可選) 抓取非計畫性轉至急性醫院住院紀錄單(評鑑)
+    HospitalizedIndicatorsReport('HospitalizedIndicatorsRecord.csv','hospitalized','results')

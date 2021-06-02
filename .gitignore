@@ -10,3 +10,5 @@ smartcare/ref.py
 smartcare/chromedriver.exe
 smartcare/results
 smartcare/physiological
+smartcare/hospitalized
+smartcare/HospitalizedIndicatorsRecord.csv
