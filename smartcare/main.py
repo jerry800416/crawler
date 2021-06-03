@@ -362,6 +362,108 @@ def getPhysiologicalMeasurements(driver,name,how_many_day=60):
 
 
 
+def getDrugRecord(driver,name,how_many_day='2021/05/28'):
+    '''
+    '''
+    results = []
+    if name +'.json' in os.listdir(drug_result):
+        return driver,False
+    else :
+        # turn to physiological measurements record page
+        driver.execute_script('window.open("{}")'.format(drug_record))
+        driver.switch_to_window(driver.window_handles[-1])
+        time.sleep(3)
+    # click all person
+    UI.WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_id("CaseType4"))
+    btn = driver.find_element_by_xpath("//input[@id='CaseType4']")
+    driver.execute_script("arguments[0].click();", btn)
+    r = waitForPage(driver)
+    # search data from name
+    driver.find_element_by_xpath("//input[@k-options='patientSearchOption']").clear()
+    driver.find_element_by_xpath("//input[@k-options='patientSearchOption']").send_keys(name)
+    btn = driver.find_element_by_xpath("//a[@ng-click='kendoQuery()']")
+    time.sleep(1)
+    driver.execute_script("arguments[0].click();", btn)
+    r = waitForPage(driver)
+    # get num
+    get_num = int((driver.find_element_by_xpath("//div[@id='MainGrid']/div[last()]/span").text.split('共 ')[1].split('筆')[0]))
+    this_page_num = int((driver.find_element_by_xpath("//div[@id='MainGrid']/div[last()]/span").text.split('共 ')[0].split(' - ')[1]))
+
+    # get data
+    for j in range((math.ceil((get_num / this_page_num)*1))):
+        if get_num <= this_page_num :
+            this_page_num = get_num
+        for k in range(this_page_num) :
+            result = {}
+            k +=1
+            # get data [contains(@class, "pro-tease")
+            # tr = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')]".format(k))
+            institute = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[4]".format(k)).text
+            division = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[5]".format(k)).text
+            dtype = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[3]".format(k)).text
+            # click edit btn
+            btn = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[11]/a[1]".format(k))
+            time.sleep(1)
+            driver.execute_script("arguments[0].click();", btn)
+            time.sleep(3)
+            begindate = driver.find_element_by_xpath("//input[@id='BeginDate']").get_attribute("value")
+            enddate = driver.find_element_by_xpath("//input[@id='EndDate']").get_attribute("value")
+
+            if datetime.datetime.strptime(enddate, "%Y/%m/%d") < datetime.datetime.strptime(how_many_day, "%Y/%m/%d"):
+                continue
+
+            if dtype != '自備':
+                cnt = len(driver.find_elements_by_xpath("//table[@id='Drugs']/tbody/tr"))
+            else :
+                cnt = len(driver.find_elements_by_xpath("//div[@id='DrugGrid']/table/tbody/tr"))
+            for i in range(cnt):
+                result = {}
+                if dtype != '自備':
+                    if i == 0 :
+                        continue
+                    result['名稱'] = driver.find_element_by_xpath("//table[@id='Drugs']/tbody/tr[{}]/td[1]".format(i+1)).text
+                    result['用量'] = driver.find_element_by_xpath("//table[@id='Drugs']/tbody/tr[{}]/td[2]".format(i+1)).text
+                    result['單位'] = driver.find_element_by_xpath("//table[@id='Drugs']/tbody/tr[{}]/td[3]".format(i+1)).text
+                    r = driver.find_element_by_xpath("//table[@id='Drugs']/tbody/tr[{}]/td[5]".format(i+1)).text.split(' - ')
+                    result['服法'] = driver.find_element_by_xpath("//table[@id='Drugs']/tbody/tr[{}]/td[7]".format(i+1)).text
+                    result['途徑'] = driver.find_element_by_xpath("//table[@id='Drugs']/tbody/tr[{}]/td[8]".format(i+1)).text
+                else :
+                    result['名稱'] = driver.find_element_by_xpath("//div[@id='DrugGrid']/table/tbody/tr[{}]/td[4]".format(i+1)).text
+                    result['用量'] = driver.find_element_by_xpath("//div[@id='DrugGrid']/table/tbody/tr[{}]/td[5]".format(i+1)).text
+                    result['單位'] = driver.find_element_by_xpath("//div[@id='DrugGrid']/table/tbody/tr[{}]/td[6]".format(i+1)).text
+                    r = driver.find_element_by_xpath("//div[@id='DrugGrid']/table/tbody/tr[{}]/td[8]".format(i+1)).text.split(' - ')
+                    result['服法'] = driver.find_element_by_xpath("//div[@id='DrugGrid']/table/tbody/tr[{}]/td[10]".format(i+1)).text
+                    result['途徑'] = driver.find_element_by_xpath("//div[@id='DrugGrid']/table/tbody/tr[{}]/td[11]".format(i+1)).text
+
+                result['頻率'] = r[0]
+                result['類型'] = dtype
+                result['院所'] = institute
+                result['科別'] = division
+                result['服藥開始日'] = begindate
+                result['服藥結束日'] = enddate
+                try:
+                    r1 = r[1].split(',') 
+                except :
+                    r1 = []
+                for l in range(4):
+                    try:
+                        result['時間{}'.format(l)] = r1[l]
+                    except:
+                        result['時間{}'.format(l)] = ""
+                results.append(result)
+            
+            # click cancel btn
+            btn = driver.find_element_by_xpath("//button[@id='cancel']")
+            driver.execute_script("arguments[0].click();", btn)
+            time.sleep(1)
+
+    driver.close()
+    driver.switch_to_window(driver.window_handles[-1])
+    return driver,{'藥事資料':results}
+    
+
+
+
 def HospitalizedIndicatorsReport(input_file,output_path,get_code_path):
     '''
     需先下載好資料csv檔案，下載位置
@@ -426,7 +528,6 @@ def HospitalizedIndicatorsReport(input_file,output_path,get_code_path):
 
 
 
-    
 
 
 
@@ -451,16 +552,13 @@ if __name__ == '__main__':
         f.write(results)
     '''
 
-    # (可選) 抓取非計畫性轉至急性醫院住院紀錄單(評鑑)
-    # driver = HospitalizedIndicatorsReport(driver,how_many_day=3650)
-
 
     # (必選) 抓取所有人名
     driver,name_list = getAllName(driver)
 
 
     # (可選) 抓取生命徵象資料
-    # '''
+    '''
     for name in name_list:
         driver,results = getPhysiologicalMeasurements(driver,name,how_many_day=60)
         if results != False :
@@ -469,10 +567,10 @@ if __name__ == '__main__':
                 f.write(results)
         else :
             continue
-    # '''
+    '''
 
     #  (可選) 抓取基本資料
-    # '''
+    '''
     for name in name_list:
         driver,results = getBasicInfo(driver,name,how_many_day=1825)
         if results != False :
@@ -481,9 +579,24 @@ if __name__ == '__main__':
                 f.write(results)
         else :
             continue
-    # '''
+    '''
+
+
+    # (可選) 抓取藥事資料
+    '''
+    for name in name_list:
+        driver,results = getDrugRecord(driver,name,how_many_day='2021/05/28')
+        if results != False :
+            results = json.dumps(results, ensure_ascii=False)
+            with open('{}/{}.json'.format(drug_result,name), 'w',encoding='utf-8') as f:
+                f.write(results)
+        else :
+            continue
+    '''
 
     driver.quit()
 
     # (可選) 抓取非計畫性轉至急性醫院住院紀錄單(評鑑)
+    '''
     HospitalizedIndicatorsReport('HospitalizedIndicatorsRecord.csv','hospitalized','results')
+    '''

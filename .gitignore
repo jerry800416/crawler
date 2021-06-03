@@ -1,14 +1,18 @@
+# general
 */venv
 */debug.log
 */__pycache__
 */chromedriver.exe
 debug.log
+# detail
 copper
 steel
 manufacturer_details/crawler.ps1
+# smart care
 smartcare/ref.py
 smartcare/chromedriver.exe
 smartcare/results
 smartcare/physiological
 smartcare/hospitalized
+smartcare/drugrecord
 smartcare/HospitalizedIndicatorsRecord.csv
