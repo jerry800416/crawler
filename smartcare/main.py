@@ -692,6 +692,7 @@ if __name__ == '__main__':
     '''
 
     # (可選) 抓取約束記錄
+    '''
     for name in name_list:
         driver,results = getRestraintRecord(driver,name)
         if results != False :
@@ -700,7 +701,7 @@ if __name__ == '__main__':
                 f.write(results)
         else :
             continue
-
+    '''
 
     driver.quit()
 
