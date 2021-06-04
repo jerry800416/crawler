@@ -396,8 +396,7 @@ def getDrugRecord(driver,name,how_many_day='2021/05/28'):
         for k in range(this_page_num) :
             result = {}
             k +=1
-            # get data [contains(@class, "pro-tease")
-            # tr = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')]".format(k))
+            # get data
             institute = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[4]".format(k)).text
             division = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[5]".format(k)).text
             dtype = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[3]".format(k)).text
@@ -460,7 +459,104 @@ def getDrugRecord(driver,name,how_many_day='2021/05/28'):
     driver.close()
     driver.switch_to_window(driver.window_handles[-1])
     return driver,{'藥事資料':results}
-    
+
+
+
+def getRestraintRecord(driver,name):
+    '''
+    '''
+    results = []
+    if name +'.json' in os.listdir(restraint_result):
+        return driver,False
+    else :
+        # turn to physiological measurements record page
+        driver.execute_script('window.open("{}")'.format(restraint_record))
+        driver.switch_to_window(driver.window_handles[-1])
+        time.sleep(3)
+    # click all person
+    UI.WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_id("CaseType4"))
+    btn = driver.find_element_by_xpath("//input[@id='CaseType4']")
+    driver.execute_script("arguments[0].click();", btn)
+    r = waitForPage(driver)
+    # search data from name
+    driver.find_element_by_xpath("//input[@k-options='patientSearchOption']").clear()
+    driver.find_element_by_xpath("//input[@k-options='patientSearchOption']").send_keys(name)
+    btn = driver.find_element_by_xpath("//a[@ng-click='kendoQuery()']")
+    time.sleep(1)
+    driver.execute_script("arguments[0].click();", btn)
+    r = waitForPage(driver)
+    # get num
+    try:
+        get_num = int((driver.find_element_by_xpath("//div[@id='MainGrid']/div[last()]/span").text.split('共 ')[1].split('筆')[0]))
+        this_page_num = int((driver.find_element_by_xpath("//div[@id='MainGrid']/div[last()]/span").text.split('共 ')[0].split(' - ')[1]))
+    except :
+        driver.close()
+        driver.switch_to_window(driver.window_handles[-1])
+        return driver,results
+
+    # get data
+    for j in range((math.ceil((get_num / this_page_num)*1))):
+        if get_num <= this_page_num :
+            this_page_num = get_num
+        for k in range(this_page_num) :
+            result = {}
+            k +=1
+            # MainGrid
+            result['約束時間'] = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[3]".format(k)).text
+            result['約束主因'] = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[4]".format(k)).text
+            result['約束部位'] = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[5]".format(k)).text
+            result['約束方式'] = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[6]".format(k)).text
+            # click edit btn
+            btn = driver.find_element_by_xpath("//div[@id='MainGrid']/div[2]/table/tbody/tr[contains(@class, 'k-master-row')][{}]/td[11]/a[1]".format(k))
+            time.sleep(1)
+            driver.execute_script("arguments[0].click();", btn)
+            time.sleep(3)
+            result['護理人員'] = Select(driver.find_element_by_xpath("//select[@id='WorkUser']")).first_selected_option.get_attribute("innerHTML")
+            result['移除約束'] = driver.find_element_by_xpath("//input[@id='IsRemove']").is_selected()
+            Duration = {}
+            Duration['<=1小時'] = driver.find_element_by_xpath("//input[@id='Duration_1']").is_selected()
+            Duration['1-4小時'] = driver.find_element_by_xpath("//input[@id='Duration_1to4']").is_selected()
+            Duration['4-8小時'] = driver.find_element_by_xpath("//input[@id='Duration_4to8']").is_selected()
+            Duration['8-16小時'] = driver.find_element_by_xpath("//input[@id='Duration_8to16']").is_selected()
+            Duration['16-24小時'] = driver.find_element_by_xpath("//input[@id='Duration_16to24']").is_selected()
+            Duration['>=24小時'] = driver.find_element_by_xpath("//input[@id='Duration_moreThan24']").is_selected()
+            try:
+                result['總持續時間'] = [i for i in Duration if Duration[i]==True][0]
+            except IndexError:
+                result['總持續時間'] = ''
+            result['觀察間隔'] = driver.find_element_by_xpath("//input[@ng-model='RestraintRecord.CareInterval']").get_attribute("value")
+            result['放鬆間隔'] = driver.find_element_by_xpath("//input[@ng-model='RestraintRecord.RelaxInterval']").get_attribute("value")
+            result['每次放鬆'] = driver.find_element_by_xpath("//input[@ng-model='RestraintRecord.RelaxMinutes']").get_attribute("value")
+            result['防範措施'] = {
+                    '增加陪伴':driver.find_element_by_xpath("//input[@id='Precautions_Companionship']").is_selected(),
+                    '使用枕頭或靠床旁椅的保護措施':driver.find_element_by_xpath("//input[@id='Precautions_Pillow']").is_selected(),
+                    '將床放低靠牆或依需要更換矮床':driver.find_element_by_xpath("//input[@id='Precautions_BedDown']").is_selected(),
+                    '協助下床坐輪椅':driver.find_element_by_xpath("//input[@id='Precautions_Wheelchair']").is_selected(),
+                    '主動滿足需求':driver.find_element_by_xpath("//input[@id='Precautions_MeetTheDemand']").is_selected(),
+                    '有意義的活動以分散住民注意力如至娛樂室看電視':driver.find_element_by_xpath("//input[@id='Precautions_Activity']").is_selected(),
+                    '其他':driver.find_element_by_xpath("//input[@id='OtherPrecautionsRemark']").get_attribute("value")
+            }
+            result['護理措施'] = {
+                    '使用約束前已試過其他防範措施':driver.find_element_by_xpath("//input[@id='NursingMeasures_TakenBefore']").is_selected(),
+                    '評估約束理由必要性及可能造成合併症':driver.find_element_by_xpath("//input[@id='NursingMeasures_Evaluation']").is_selected(),
+                    '與工作人員協商':driver.find_element_by_xpath("//input[@id='NursingMeasures_Consult']").is_selected(),
+                    '向住民解釋':driver.find_element_by_xpath("//input[@id='NursingMeasures_Explain']").is_selected(),
+                    '與住民家屬討論經同意約束':driver.find_element_by_xpath("//input[@id='NursingMeasures_Discussions']").is_selected(),
+                    '其他':driver.find_element_by_xpath("//input[@id='OtherNursingMeasuresRemark']").get_attribute("value")
+            }  
+            result['家屬備忘'] = driver.find_element_by_xpath("//textarea[@id='FamilyRemark']").get_attribute("value")
+            result['其他備註'] = driver.find_element_by_xpath("//textarea[@id='Remark']").get_attribute("value")
+            result['後續評估'] = driver.find_element_by_xpath("//textarea[@id='Evaluation']").get_attribute("value")
+
+            results.append(result)
+            # click cancel btn
+            btn = driver.find_element_by_xpath("//button[@id='cancel']")
+            driver.execute_script("arguments[0].click();", btn)
+            time.sleep(1)
+
+    driver.close()
+    driver.switch_to_window(driver.window_handles[-1])
+    return driver,results
 
 
 
@@ -557,18 +653,6 @@ if __name__ == '__main__':
     driver,name_list = getAllName(driver)
 
 
-    # (可選) 抓取生命徵象資料
-    '''
-    for name in name_list:
-        driver,results = getPhysiologicalMeasurements(driver,name,how_many_day=60)
-        if results != False :
-            results = json.dumps(results, ensure_ascii=False)
-            with open('{}/{}.json'.format(physiological_result,name), 'w',encoding='utf-8') as f:
-                f.write(results)
-        else :
-            continue
-    '''
-
     #  (可選) 抓取基本資料
     '''
     for name in name_list:
@@ -576,6 +660,19 @@ if __name__ == '__main__':
         if results != False :
             results = json.dumps(results, ensure_ascii=False)
             with open('{}/{}.json'.format(data_path,name), 'w',encoding='utf-8') as f:
+                f.write(results)
+        else :
+            continue
+    '''
+
+
+    # (可選) 抓取生命徵象資料
+    '''
+    for name in name_list:
+        driver,results = getPhysiologicalMeasurements(driver,name,how_many_day=60)
+        if results != False :
+            results = json.dumps(results, ensure_ascii=False)
+            with open('{}/{}.json'.format(physiological_result,name), 'w',encoding='utf-8') as f:
                 f.write(results)
         else :
             continue
@@ -593,6 +690,17 @@ if __name__ == '__main__':
         else :
             continue
     '''
+
+    # (可選) 抓取約束記錄
+    for name in name_list:
+        driver,results = getRestraintRecord(driver,name)
+        if results != False :
+            results = json.dumps(results, ensure_ascii=False)
+            with open('{}/{}.json'.format(restraint_result,name), 'w',encoding='utf-8') as f:
+                f.write(results)
+        else :
+            continue
+
 
     driver.quit()
 
